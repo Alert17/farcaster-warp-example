@@ -4,7 +4,7 @@ import { frames } from "./frames";
 
 export const dynamic = "force-dynamic";
 
-const handleRequest = frames(async (ctx) => {
+const handleRequest = frames(async () => {
 	return {
 		image: "https://placekitten.com/800/400",
 		buttons: [
