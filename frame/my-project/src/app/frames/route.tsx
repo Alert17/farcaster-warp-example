@@ -2,11 +2,11 @@
 import { Button } from "frames.js/next";
 import { frames } from "./frames";
 
-export const dynamic = "force-dynamic";
-
-const handleRequest = frames(async () => {
+const handleRequest = frames(async (ctx) => {
 	return {
-		image: "https://picsum.photos/200/300",
+		image: (
+			<span>{ctx.pressedButton ? `I clicked ${ctx.searchParams.value}` : `Click some button`}</span>
+		),
 		buttons: [
 			<Button action="post" target={{ query: { value: "Yes" } }}>
 				Say Yes

@@ -1,12 +1,13 @@
 import { fetchMetadata } from "frames.js/next";
 
 export async function generateMetadata() {
-	const frameMetadata = await fetchMetadata(
-		new URL(
-			"/frames",
-			process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"
-		)
-	);
+	const baseUrl = process.env.VERCEL_URL
+		? `https://${process.env.VERCEL_URL}`
+		: "http://localhost:3000";
+	const url = new URL("/frames", baseUrl);
+	console.log("Fetching metadata from:", url.toString());
+
+	const frameMetadata = await fetchMetadata(url);
 
 	return {
 		title: "My page",
