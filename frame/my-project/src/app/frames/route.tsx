@@ -2,6 +2,8 @@
 import { Button } from "frames.js/next";
 import { frames } from "./frames";
 
+export const dynamic = "force-dynamic";
+
 const handleRequest = frames(async (ctx) => {
 	return {
 		image: (
