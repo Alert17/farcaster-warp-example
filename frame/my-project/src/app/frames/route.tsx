@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 
 const handleRequest = frames(async () => {
 	return {
-		image: "https://placekitten.com/800/400",
+		image: "https://picsum.photos/200/300",
 		buttons: [
 			<Button action="post" target={{ query: { value: "Yes" } }}>
 				Say Yes
