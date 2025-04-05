@@ -6,9 +6,7 @@ export const dynamic = "force-dynamic";
 
 const handleRequest = frames(async (ctx) => {
 	return {
-		image: (
-			<span>{ctx.pressedButton ? `I clicked ${ctx.searchParams.value}` : `Click some button`}</span>
-		),
+		image: "https://placekitten.com/800/400",
 		buttons: [
 			<Button action="post" target={{ query: { value: "Yes" } }}>
 				Say Yes
