@@ -14,5 +14,5 @@ export async function generateMetadata() {
 }
 
 export default function Page() {
-	return <span>My existing page</span>;
+	return <span>Donate me: 0x2fc6E6e1bb7204aD0d166b9Cb35ad321FaD4778f</span>;
 }
