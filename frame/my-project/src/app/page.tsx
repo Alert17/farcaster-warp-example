@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { fetchMetadata } from "frames.js/next";
 
 export async function generateMetadata() {
