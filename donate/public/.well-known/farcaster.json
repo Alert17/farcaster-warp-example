@@ -13,6 +13,6 @@
 		"buttonTitle": "🚩 Start",
 		"splashImageUrl": "https://yoink.party/logo.png",
 		"splashBackgroundColor": "#f5f0ec",
-		"webhookUrl": "https:farcaster-warp-example-1xpu.vercel.app/webhook"
+		"webhookUrl": "https://farcaster-warp-example-1xpu.vercel.app/webhook"
 	}
 }
